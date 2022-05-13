@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.ServicesFragment"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/bv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Bonne Valeur"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/ticketbv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ticket"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="-37dp"
+                android:backgroundTint="#FFC107" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardbv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/affichbv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="BV07"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Carte Bonde"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/ticketcb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ticket"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="-37dp"
+                android:backgroundTint="#FFC107" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardcb"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/affichcb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="BV07"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/cp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Carte Pétrolière"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/ticketcp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ticket"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="-37dp"
+                android:backgroundTint="#FFC107" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardcp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/affichcp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="BV07"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

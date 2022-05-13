@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "483897119881",
+    "project_id": "agilestore-17cd5",
+    "storage_bucket": "agilestore-17cd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483897119881:android:2c68ecf76688147db2e258",
+        "android_client_info": {
+          "package_name": "com.pfe.agilestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483897119881-9i5iab7gaf91mo0vpsqbsr8nhabf0nvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pfe.agilestore",
+            "certificate_hash": "cdabb4297880217b5608cb4654a52847d5f849d1"
+          }
+        },
+        {
+          "client_id": "483897119881-2pvscge7fk5eiapjtcetb4hs6ggp0iha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi_OciM3vkKobuEnvsdTFrXqhkP9yTHro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483897119881-2pvscge7fk5eiapjtcetb4hs6ggp0iha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
