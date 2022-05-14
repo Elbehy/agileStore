@@ -1,21 +1,22 @@
 package com.pfe.agilestore;
 
 public class RegisterRequest {
-    private String fullname,tel,password;
+    private  Integer tel ;
+    private String username,password;
 
     public String getFullname() {
-        return fullname;
+        return username;
     }
 
     public void setFullname(String fullname) {
-        this.fullname = fullname;
+        this.username = fullname;
     }
 
-    public String getTel() {
+    public Integer getTel() {
         return tel;
     }
 
-    public void setTel(String tel) {
+    public void setTel(Integer tel) {
         this.tel = tel;
     }
 

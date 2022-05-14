@@ -45,7 +45,6 @@ import retrofit2.Response;
 public class signupActivity extends AppCompatActivity {
 
 
-    private static final String url="http://192.168.1.5/api/users.json";
     EditText name,Phone,Password,coPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +66,7 @@ public class signupActivity extends AppCompatActivity {
                 final String PhoneTxt = Phone.getText().toString();
                 final String PasswordTxt = Password.getText().toString();
                 final String copasswordTxt = coPassword.getText().toString();
-
+                Log.i("data ==> ", nameTxt+PhoneTxt+PasswordTxt+copasswordTxt);
 
                 if(nameTxt.isEmpty() || PhoneTxt.isEmpty() || PasswordTxt.isEmpty() || copasswordTxt.isEmpty() ){
                     Toast.makeText(signupActivity.this,"complèter vos informations",Toast.LENGTH_SHORT).show();
@@ -79,8 +78,7 @@ public class signupActivity extends AppCompatActivity {
                     RegisterRequest registerRequest=new RegisterRequest();
                     registerRequest.setFullname(nameTxt);
                     registerRequest.setPassword(PasswordTxt);
-                    registerRequest.setTel(PhoneTxt);
-                    Log.d("requestachref",nameTxt+PasswordTxt+PhoneTxt);
+                    registerRequest.setTel(Integer.parseInt(PhoneTxt));
                     registerUser(registerRequest);
 
                 }
@@ -103,17 +101,20 @@ public class signupActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
                 if(response.isSuccessful()){
+                    Log.i("data response ==> ", response.toString() );
                     Toast.makeText(signupActivity.this,"succée",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(signupActivity.this, loginActivity.class));
                     finish();
 
                 }else{
+                    Log.d("data  ==> ", "failed" );
                     Toast.makeText(signupActivity.this,"failed",Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<RegisterResponse> call, Throwable t) {
+                Log.d("fail", "fail");
                 Toast.makeText(signupActivity.this,"??????",Toast.LENGTH_SHORT).show();
 
             }
